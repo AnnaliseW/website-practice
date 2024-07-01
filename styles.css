@@ -102,7 +102,7 @@
     transition: all 0.3 ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 0px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -199,6 +199,126 @@
 
 }
 
+
+
+/* ICONS */ 
+
+
+
+.icons__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.icons__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    gap: 20px; 
+}
+
+
+.icons__item {
+    margin: 1rem;
+    height: 80px;
+    width: 80px;
+    border-radius: 4px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.icons__item:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+
+
+.icons__links:hover {
+    transform: scale(1.25);
+    color: #75ffe3;
+    transition: all 0.3 ease;
+}
+
+
+.icons__links {
+    display: flex;
+    flex-direction: column; /* Ensures text is above image */
+    align-items: center;
+    text-decoration: none;
+    color: #ff8177;
+    padding: 2rem;
+    transition: transform 0.2s ease-in, color 0.3s ease;
+}
+
+
+.icons__item {
+    margin: 1rem;
+    /* have to change the size for the images depending on what we want */
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    background-image: 
+    url('/images/foodicon.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.icons__item:nth-child(2) {
+    background-image:
+    url('/images/travelicon.png');
+}
+
+.icons__item:nth-child(3) {
+    background-image:
+    url('/images/fiticon.png');
+}
+
+.icons__item:nth-child(4) {
+    background-image:
+    url('/images/photoicon.png');
+}
+
+.icons__item:nth-child(5) {
+    background-image: 
+    url('/images/hobbyicon.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */ 
+
 .main {
     background-color: #ffb6af;
 }
@@ -210,7 +330,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #d5fff7;
+    background-color: #a5ecde;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -297,7 +417,7 @@
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 0px) {
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -325,7 +445,7 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 0px) {
 
     .main__content h1 {
         font-size: 2 rem;
@@ -353,7 +473,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* change the background height color*/
+    height: 400vh;
 }
 
 .services h1 {
@@ -396,7 +517,7 @@
     url('/images/popularFood.jpg');
     background-size: cover;
     position: relative;
-    color: #fff;
+    color: #f79c9c;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -405,12 +526,47 @@
 }
 
 .services__card:nth-child(2) {
+    /* height: 300px;
+    width: 300px; */
     background-image: linear-gradient(
         to bottom, 
         rgba(0,0,0,0) 0%,
         rgba(17,17,17,0.6) 100%
     ),
     url('/images/popularTravel.jpg');
+}
+
+.services__card:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url('/images/fitsphoto.jpg');
+    /* height: 300px;
+    width: 200px; */
+}
+
+.services__card:nth-child(4) {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url('/images/photoPhoto.jpg');
+    /* height: 300px;
+    width: 250px; */
+}
+
+.services__card:nth-child(5) {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url('/images/hobbyphoto.jpg');
+    /* height: 300px;
+    width: 500px; */
 }
 
 .services h2 {
@@ -441,7 +597,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 0px) {
     .services {
         height: 1600px;
     }
@@ -452,7 +608,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 0px) {
     .services {
         height: 1400px;
     }
@@ -469,6 +625,7 @@
 
 
 
+
 /* About Me Section */ 
 
 .creator {
@@ -476,7 +633,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 800vh;
 }
 
 .creator h1 {
@@ -508,8 +665,8 @@
 .creator__card {
     margin: 1rem;
     /* have to change the size for the images depending on what we want */
-    height: 625px;
-    width: 400px;
+    height: 800px;
+    width: 500px;
     border-radius: 4px;
     background-image: linear-gradient(
         to bottom, 
@@ -526,7 +683,7 @@
     padding: 20px;
     box-sizing: border-box;
 }
-
+/* 
 .creator__card:nth-child(2) {
     background-image: linear-gradient(
         to bottom, 
@@ -534,7 +691,7 @@
         rgba(17,17,17,0.6) 100%
     ),
     url('/images/creator1.jpg');
-}
+} */
 
 .creator h2 {
     margin: 0;
@@ -559,7 +716,7 @@
 }
 
 .creator__card:hover {
-    transform: scale(1.075);
+    transform: scale(1.2);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
@@ -575,9 +732,12 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 0px) {
+    
     .creator {
-        height: 1400px;
+        height: 1600px;
     }
 
     .creator h1 {
@@ -585,8 +745,75 @@
     }
 
     .creator__card {
-        width: 300px;
+        width: 90%;
+        height: auto;
+        
     }
 }
 
 /* Footer CSS */
+
+
+.footer__container  {
+    background-color: #a5ecde;
+    padding: 5rem 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo {
+    color: #f79c9c;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links {
+    width: 100%;
+    max-width:  800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.footer__link--wrapper {
+    display: flex;
+    width: 100%px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    text-align: left;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2 {
+    margin-bottom: 16px;
+
+}
+
+.footer__link--items > h2 {
+    color: #fff;
+}
+
+.footer__link--items a {
+    color: #cf556c;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
