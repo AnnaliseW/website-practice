@@ -81,6 +81,8 @@ body {
     margin-bottom: 1rem;
 }
 
+
+
 .form__input {
     display: block;
     width: 100%;
@@ -102,6 +104,8 @@ body {
     color: #dd584b;
     border-color: #b73024;
 }
+
+
 
 
 .form__button {
